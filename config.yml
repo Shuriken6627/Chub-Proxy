@@ -4,3 +4,4 @@ model_list:
       model: mistral/mistral-medium-latest # LiteLLM sends this to Mistral
       api_base: https://api.mistral.ai/v1/chat/completions
       api_key: os.environ/MISTRAL_API_KEY # LiteLLM will pick this from Render's env vars
+      drop_params: true
