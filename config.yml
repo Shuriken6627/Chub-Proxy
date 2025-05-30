@@ -1,0 +1,6 @@
+model_list:
+  - model_name: gpt-4o # Chub.ai sends this
+    litellm_params:
+      model: mistral/mistral-medium-latest # LiteLLM sends this to Mistral
+      api_base: https://api.mistral.ai/v1
+      api_key: os.environ/MISTRAL_API_KEY # LiteLLM will pick this from Render's env vars
